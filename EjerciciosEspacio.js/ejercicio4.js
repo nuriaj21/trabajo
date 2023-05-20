@@ -19,3 +19,27 @@ let num = prompt("Introduzca un número")
        
         }
    console.log(`Suma de Pares: ${pares} Suma de impares: ${impares} `);
+
+
+   /*Con funciones*/
+
+   function sumarNum(num, opc){
+    let suma = 0;
+    if (opc == 'pares'){
+        for(let i = 1; i<= num; i++){
+            if (i % 2 == 0){
+                suma += i;
+                console.log(`Pares de ${suma}`);
+        } 
+       }
+   }
+   if(opc == 'impares'){
+    for(let i = 1; i<= num; i++){
+        if(i % 2 != 0){
+            suma += i;
+            console.log(`Impares: ${suma}`);
+        }
+    }
+}
+return suma;
+}
