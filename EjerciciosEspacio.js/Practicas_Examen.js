@@ -82,7 +82,8 @@ function sumarNumeros(n, opcion){
  - - - -
   
   /*Otra forma de resolverlo, a mi me gusta más*/
-  let  todos, pares, imPares;
+
+  let  todos, pares, impares;
 
 function sumarNumeros(n, opcion) {
     let suma = 0;
