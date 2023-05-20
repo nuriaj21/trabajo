@@ -67,7 +67,45 @@ function sumarNumeros(n, opcion){
     }
     return todo;
 }
-    
+ // Sumar los números del 1 al 100
+  console.log('Suma de todos los números del 1 al 100:', sumarNumeros(100, 'todos'));
+  
+  // Sumar solo los números pares del 1 al 100
+  console.log('Suma de los números pares del 1 al 100:', sumarNumeros(100, 'pares'));
+  
+  // Sumar solo los números impares del 1 al 100
+  console.log('Suma de los números impares del 1 al 100:', sumarNumeros(100, 'impares'));
+  
+  // Sumar 'todos' los números, hasta el 'n'que te indique
+  console.log('Suma de todos los números :', sumarNumeros(n, 'todos'));
+
+ - - - -
+  
+  /*Otra forma de resolverlo, a mi me gusta más*/
+  let  todos, pares, imPares;
+
+function sumarNumeros(n, opcion) {
+    let suma = 0;
+  
+    if (opcion === 'todos') {
+      for (let i = 1; i <= n; i++) {
+        suma += i;
+      }
+    } else if (opcion === 'pares') {
+      for (let i = 1; i <= n; i++) {
+        if (i % 2 === 0) {
+          suma += i;
+        }
+      }
+    } else if (opcion === 'impares') {
+      for (let i = 1; i <= n; i++) {
+        if (i % 2 !== 0) {
+          suma += i;
+        }
+      }
+    }
+     return suma;
+  }
   // Sumar los números del 1 al 100
   console.log('Suma de todos los números del 1 al 100:', sumarNumeros(100, 'todos'));
   
