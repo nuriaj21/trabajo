@@ -137,7 +137,7 @@ function factorialBucle(n) {
      return factorial;
   }
   // Ejemplo :
-  const numero = 5;
+  let  numero = 5;
   const factorial = factorialBucle(numero);
   console.log(`El factorial de ${numero} es: ${factorial}`);
   

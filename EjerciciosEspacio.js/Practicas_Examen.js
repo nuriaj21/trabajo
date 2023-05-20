@@ -93,7 +93,79 @@ function factorialBucle(n) {
     return factorial;
  }
 
+__________________________________
 
+/*4. Hacer una clase `Cuenta` con métodos para `ingresar`, `retirar` `dinero`, `verSaldo`, `imprimir` comprobante.*/
 
-/*12. Hacer una clase `Cuenta` con métodos para `ingresar`, `retirar` `dinero`, `verSaldo`, `imprimir` comprobante.*/
-/*13. Vídeo en reproducción. Pausar con un clic en <button>, <body>, <div>, etc.*/
+class Cuenta {
+   constructor(nombre,dni, email, telefono, contraseña) {
+     this.nombre = nombre;
+     this.dni = dni;
+     this.email = email;
+     this.telefono = telefono;
+     this.contraseña = contraseña;
+     this.saldo = 0;
+   }
+ 
+   ingresar(cantidad) {
+     if (cantidad >= 0) {
+       this.saldo += cantidad;
+       console.log(`Se han ingresado ${cantidad} euros.`);
+     } else {
+       console.log('La cantidad ingresada debe ser mayor a cero.');
+     }
+   }
+ 
+   retirar(cantidad) {
+     if (cantidad > 0) {
+       if (cantidad <= this.saldo) {
+         this.saldo -= cantidad;
+         console.log(`Se han retirado ${cantidad} euros.`);
+       } else {
+         console.log('Saldo insuficiente para realizar el reintegro.');
+       }
+     } else {
+       console.log('La cantidad a retirar debe ser mayor a cero.');
+     }
+   }
+ 
+   verSaldo() {
+     console.log(`Saldo actual: ${this.saldo} euros.`);
+   }
+ 
+   imprimirComprobante() {
+     console.log('Comprobante:');
+     console.log('-------------------------');
+     console.log(`Nombre: ${this.nombre}`);
+     console.log(`Saldo: ${this.saldo} euros`);
+     console.log('-------------------------');
+   }
+ }
+ 
+ // Ejemplo:
+ const miCuenta = new Cuenta('Nuria Justo','43458062J', 'nuriaj21@example.com', '123456789', 'contraseña123');
+ 
+ miCuenta.ingresar(10000);
+ miCuenta.retirar(500);
+ miCuenta.verSaldo();
+ miCuenta.imprimirComprobante();
+ 
+
+______________________________
+
+/*5. Vídeo en reproducción. Pausar con un clic en <button>, <body>, <div>, etc.*/
+
+```html
+  <h1>Video</h1>
+  <video id="video" src="video.mp4" autoplay muted loop width="auto" height="500"></video>
+  <br>
+  <button onclick="pausarVideo()">Pausar vídeo</button> 
+```
+
+```javascript
+  function pausarVideo() {
+    const video = document.getElementById("video");
+    video.pause();
+    console.log("El vídeo está pausado");
+  }
+```
