@@ -17,7 +17,26 @@ let compra,descuento,totalPagar;
     descuento = compra*0.15;
 } totalPagar = compra - descuento;
 
-alert ("El importe de su compra es: "+compra+" euros\n"+ "El descuento aplicado es: " +descuento +" euros\n"+"El importe a pagar es: " + totalPagar + " euros\n" + "GRACIAS POR SU COMPRA")
+alert ("El importe de su compra es: "+compra+" euros\n"+ "El descuento aplicado es: " +descuento +" euros\n"+"El importe a pagar es: " + totalPagar + " euros\n" + "GRACIAS POR SU COMPRA");
+- - -
+/*Otra forma: a mi me gusta más*/
+let valorCompra, descuento, total;
+valorCompra = Number(prompt("Indique el valor de su compra"));
+switch (true){
+    case   valorCompra<100:
+          descuento = valorCompra *0;
+       break;
+    case  valorCompra >=100 && valorCompra<=300:
+          descuento = valorCompra * 0.05;
+       break
+    case  valorCompra >300 && valorCompra <= 500:
+          descuento = valorCompra * 0.10;
+        break;
+    case  valorCompra >500:
+        descuento = valorCompra * 0.15;
+        break;
+       } total = valorCompra - descuento;
+   alert ("El importe de su compra es: "+valorCompra+" euros\n"+ "El descuento aplicado es: " +descuento +" euros\n"+"El importe a pagar es: " + total + " euros\n" + "GRACIAS POR SU COMPRA");
  
 ________________
 
