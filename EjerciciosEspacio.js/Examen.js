@@ -48,7 +48,7 @@ switch (true){
     case   valorCompra<100:
           descuento = valorCompra *0;
        break;
-    case  valorCompra>=100 && valorCompra<=300:
+    case  valorCompra >=100 && valorCompra<=300:
           descuento = valorCompra * 0.05;
        break
     case  valorCompra >300 && valorCompra <= 500:
@@ -57,7 +57,7 @@ switch (true){
     case  valorCompra >500:
         descuento = valorCompra * 0.15;
         break;
-       } total = valorCompra -descuento;
+       } total = valorCompra - descuento;
    alert ("El importe de su compra es: "+valorCompra+" euros\n"+ "El descuento aplicado es: " +descuento +" euros\n"+"El importe a pagar es: " + total + " euros\n" + "GRACIAS POR SU COMPRA");
 
 

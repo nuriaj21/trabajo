@@ -77,13 +77,21 @@ function factorialRecursivo(n) {
    if (n === 0) {
      return 1;
    }
-   
    return n * factorialRecursivo(n - 1);
  }
- const factorial = factorialRecursivo(numero);
- console.log("Factorial de", numero, "es", factorial);
- 
+let factorial = factorialRecursivo(numero);
+alert("Factorial de "+ numero+ " es "+ factorial);
 
+/* El mismo ejercicio en bucle:*/
+
+function factorialBucle(n) {
+   let factorial = 1;
+ 
+   for (let i = 1; i <= n; i++) {
+       factorial *= i;
+   }
+    return factorial;
+ }
 
 
 
