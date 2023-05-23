@@ -1,0 +1,36 @@
+
+/*1.Un comerciante hace descuentos a sus clientes de la siguiente forma:
+Si ha comprado menos de 100 euros no hay descuento
+Si la compra está entre 100 y 300 euros le descuenta un 5%
+Si la compra está por encima de 300 hasta 500 euros le descuenta un 10%
+Si la compra supera los 500 euros le descuenta un 15%*/
+
+
+
+
+
+ Sumar los números del 1 al 100. Sumar con condiciones, solo los pares, solos los impares. El bucle debe poder sumar a cualquier n que se le indique.
+
+
+
+
+
+
+/*3. Calcular el factorial de un número. Ya sea por recursividad o por bucle*/
+
+/*4. Hacer una clase `Cuenta` con métodos para `ingresar`, `retirar` `dinero`, `verSaldo`, `imprimir` comprobante.*/
+
+/*5. Vídeo en reproducción. Pausar con un clic en <button>, <body>, <div>, etc.*/
+
+/*html*/
+  <h1>Video</h1>
+  <video id="video" src="video.mp4" autoplay muted loop width="auto" height="500"></video>
+  <br>
+  <button onclick="pausarVideo()">Pausar vídeo</button> 
+
+javascript
+  function pausarVideo() {
+    const video = document.getElementById("video");
+    video.pause();
+    console.log("El vídeo está pausado");
+    }
