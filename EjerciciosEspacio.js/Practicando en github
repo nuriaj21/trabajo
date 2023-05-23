@@ -31,10 +31,19 @@ alert(
 
 /2.Sumar los números del 1 al 100. Sumar con condiciones, solo los pares, solos los impares. El bucle debe poder sumar a cualquier n que se le indique.
 
-
-
-
-
+function sumar(n, parImpar = "todos"){
+  let suma = 0
+  for(let i = 0; i <= n; i++){
+    if(parImpar == "par" && i % 2 == 0){
+      suma += i
+    }else if(parImpar == "impar" && i % 2 != 0){
+      suma += i
+    }else if(parImpar == "todos"){
+      suma += i
+    }
+  }
+  return suma
+}
 
 /*3. Calcular el factorial de un número. Ya sea por recursividad o por bucle*/
 const numero = prompt('Introduce un número para calcular su factorial');
