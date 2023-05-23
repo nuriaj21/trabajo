@@ -212,18 +212,16 @@ class Cuenta {
 ______________________________
 
 /*5. Vídeo en reproducción. Pausar con un clic en <button>, <body>, <div>, etc.*/
-
-```html
+html
   <h1>Video</h1>
   <video id="video" src="video.mp4" autoplay muted loop width="auto" height="500"></video>
   <br>
-  <button onclick="pausarVideo()">Pausar vídeo</button> 
-```
+  <button onclick="pausarVideo()">Pausar vídeo</button> ;
 
-```javascript
+//</br>javascript
   function pausarVideo() {
     const video = document.getElementById("video");
     video.pause();
     console.log("El vídeo está pausado");
   }
-```
+
